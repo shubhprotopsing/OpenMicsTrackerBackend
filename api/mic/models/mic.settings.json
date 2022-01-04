@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mics",
+  "info": {
+    "name": "Mic"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "day": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "location": {
+      "type": "string"
+    }
+  }
+}
